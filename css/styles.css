@@ -156,6 +156,13 @@ body {
   letter-spacing: 0.02em;
 }
 
+.site-nav-link,
+.nav-links-link {
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .site-nav-link:hover,
 .site-nav-link:focus {
   color: var(--accent-color);
@@ -234,6 +241,10 @@ body {
 
   margin-left: auto;
   margin-right: auto;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover,
@@ -241,6 +252,8 @@ body {
   color: var(--button-wh-color);
   background-color: var(--button-push-color);
 }
+
+/* ---------------backdrop и модальное окно----------------- */
 
 .backdrop {
   position: fixed;
@@ -260,10 +273,10 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 221px;
   left: 50%;
 
-  transform: translate(-50%, -50%);
+  transform: translatex(-50%);
 
   background-color: #fff;
 
@@ -435,6 +448,10 @@ body {
   border-radius: 50%;
 
   color: var(--icon-color);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -491,6 +508,10 @@ body {
 
   width: 170px;
   height: 92px;
+
+  transition-property: background-color, color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -527,6 +548,10 @@ body {
   height: 38px;
   padding-left: 22px;
   padding-right: 22px;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons:hover,
@@ -564,6 +589,10 @@ body {
 }
 .portpholio-list-link {
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portpholio-list-link:hover,
@@ -638,6 +667,10 @@ body {
 .footer-link {
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
