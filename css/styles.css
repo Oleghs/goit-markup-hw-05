@@ -638,17 +638,51 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portpholio-list-link:hover,
-.portpholio-list-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portpholio-card-name {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.portpholio-card-wrap-conteiner {
+  position: relative;
+  overflow: hidden;
+}
+
+.portpholio-card-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portpholio-wrap-content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+
+  color: var(--title-hero-color);
+
+  padding: 63px 24px;
+}
+
+.portpholio-list-item:hover,
+.portpholio-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portpholio-list-item:hover .portpholio-card-wrap {
+  transform: translateY(0);
 }
 
 /* --------------Footer------------------ */
